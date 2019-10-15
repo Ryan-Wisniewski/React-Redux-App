@@ -12,6 +12,7 @@ const DogList = props => {
     return (
         <>
             <h1>Cute Dog API</h1>
+            <p>WARNING GENERATES 1000 CUTE PUPPIES! Can you resist?</p>
             <button onClick={props.getData}>
                 {props.isLoading ? (
                     <CircleSpinner
