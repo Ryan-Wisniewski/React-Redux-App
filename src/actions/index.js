@@ -11,7 +11,7 @@ export const getData = () => {
     dispatch({ type: FETCH_DOGS_DATA_START });
     // console.log('dispatchFETCH_DOGS_DATA_START')
     axios
-      .get('https://dog.ceo/api/breed/shiba/images')
+      .get('https://dog.ceo/api/breed/terrier/images')
       .then(res => {
         console.log('res',res.data.message)
         dispatch({ type: FETCH_DOGS_DATA_SUCCESS, payload: res.data.message });
